@@ -29,3 +29,53 @@ This project is a Real-Time Weather Monitoring System that fetches live weather 
    cd backend
    npm install
 ```
+3. **Configure the API Key: Create a .env file in the backend directory with**:
+```bash
+API_KEY=your-api-key-here
+MONGODB_URI=mongodb://your-mongodb-uri
+TEMP_THRESHOLD=35  # Example temperature threshold
+INTERVAL=300  # Fetch interval in seconds
+```
+
+## Test Cases
+
+### 1. System Setup
+- **Objective**: Verify that the system starts successfully and connects to the OpenWeatherMap API using a valid API key.
+
+### 2. Data Retrieval
+- **Objective**: Simulate API calls at configurable intervals.
+- **Verification**: Ensure the system retrieves weather data for the specified locations and correctly parses the response.
+
+### 3. Temperature Conversion
+- **Objective**: Test the conversion of temperature values from Kelvin to Celsius (or Fahrenheit) based on user preference.
+
+### 4. Daily Weather Summary
+- **Objective**: Simulate a sequence of weather updates for several days.
+- **Verification**: Verify that daily summaries are calculated correctly, including average, maximum, minimum temperatures, and dominant weather conditions.
+
+### 5. Alerting Thresholds
+- **Objective**: Define and configure user thresholds for temperature or weather conditions.
+- **Verification**: Simulate weather data that exceeds or breaches the thresholds, and ensure alerts are triggered only when a threshold is violated.
+
+
+## Rollups and Aggregates
+
+### 1. Daily Weather Summary
+- **Objective**: Roll up the weather data for each day and calculate daily aggregates, including:
+  - Average temperature
+  - Maximum temperature
+  - Minimum temperature
+  - Dominant weather condition (determined by the most frequent condition throughout the day)
+- **Storage**: Store the daily summaries in a database or persistent storage for further analysis.
+
+### 2. Alerting Thresholds
+- **Objective**: Define user-configurable thresholds for temperature or specific weather conditions (e.g., alert if the temperature exceeds 35 degrees Celsius for two consecutive updates).
+- **Implementation**: Continuously monitor the latest weather data and compare it against the defined thresholds.
+- **Alerts**: If a threshold is breached, trigger an alert for the current weather conditions. Alerts can be displayed in the console or sent through an email notification system (implementation details are left open-ended).
+
+### 3. Implement Visualizations
+- **Objective**: Create visualizations to display:
+  - Daily weather summaries
+  - Historical trends
+  - Triggered alerts
+
