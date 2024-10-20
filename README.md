@@ -24,3 +24,9 @@ This project is a Real-Time Weather Monitoring System that fetches live weather 
    cd weather-monitoring-system
 
 2. **Install Dependencies**:
+- Backend:
+ ```bash
+   cd backend
+   npm install
+
+
