@@ -1,0 +1,134 @@
+.city-weather-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.alert-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.alert-form input,
+.alert-form button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.alert-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.alert-form button:hover {
+    background-color: #0056b3;
+}
+
+.city-weather-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.city-weather-box {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    flex: 1 1 280px;
+}
+
+.city-weather-box h3 {
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+.city-weather-box p {
+    margin: 8px 0;
+}
+
+.city-summary {
+    margin-top: 12px;
+    background-color: #e0e0e0;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.city-summary h4 {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.toggle-temp-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-temp-button:hover {
+    background-color: #0056b3;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.city-weather-box.exceeds-threshold {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.alert-message {
+    color: red;
+    font-weight: bold;
+}
+
+.alerts-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row; 
+    gap: 15px; 
+}
+  
+  .alerts-section h2 {
+    margin-bottom: 15px;
+    color: #ff3333;
+  }
+  
+   .alert-box {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #ffe6e6;
+    border-left: 4px solid #ff3333;
+    border-radius: 5px;
+  } 
+  
+  .alert-box h3 {
+    margin-bottom: 5px;
+  }
+  
+  .alert-box p {
+    margin: 2px 0;
+  }
+  
