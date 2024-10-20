@@ -29,4 +29,3 @@ This project is a Real-Time Weather Monitoring System that fetches live weather 
    cd backend
    npm install
 
-
