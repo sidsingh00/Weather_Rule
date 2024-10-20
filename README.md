@@ -79,3 +79,16 @@ INTERVAL=300  # Fetch interval in seconds
   - Historical trends
   - Triggered alerts
 
+## Docker Setup
+-**To run in Docker**:
+
+### Build the Docker images:
+```Bash
+docker build -t weather-monitoring-system-backend ./backend
+docker build -t weather-monitoring-system-frontend ./frontend
+Use code with caution.
+```
+### Run the containers:
+```Bash
+docker run -d -p 3000:3000 weather-monitoring-system-frontend
+docker run -d -p 5000:5000 weather-monitoring-system-backend
