@@ -22,11 +22,9 @@ This project is a Real-Time Weather Monitoring System that fetches live weather 
    ```bash
    git clone <your-repository-url>
    cd weather-monitoring-system
-
+   
 2. **Install Dependencies**:
 - Backend:
  ```bash
    cd backend
    npm install
-
-3.**Configure the API Key: Create a .env file in the backend directory with**:
