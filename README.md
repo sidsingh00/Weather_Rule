@@ -29,3 +29,4 @@ This project is a Real-Time Weather Monitoring System that fetches live weather 
    cd backend
    npm install
 
+3.**Configure the API Key: Create a .env file in the backend directory with**:
