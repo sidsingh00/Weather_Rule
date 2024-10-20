@@ -28,3 +28,4 @@ This project is a Real-Time Weather Monitoring System that fetches live weather 
  ```bash
    cd backend
    npm install
+```
